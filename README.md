@@ -59,15 +59,17 @@ Return:
 
 Notice the lag here. Rating returned by the environment correspond to the previously send (user, item).
 
-#### Random agent
-An example of random agent for this environment can be found in ...
-
 ## Second environment
 The second environment is a variation of the first one that include covariates in the inputs (a.k.a. content based).
 
 Methods are the same but you receive also a vector of features.
 - next_variables
 
+
+## Third environment
+The third environment generate implicit feedback.
+
+To be released soon.
 
 
 ## Performance evaluation
