@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  flask_app:
+    container_name: flask_app
+    restart: always
+    build: ./flask_app
+    command: gunicorn app:app -w 4 -b :5000
+
+  nginx:
+    container_name: nginx
+    restart: always
+    build:
+      context: nginx
+      args:
+        - PROXY_PASS=http://flask_app:5000
+    ports:
+    - "5002:80"
+    depends_on:
+    - flask_app
