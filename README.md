@@ -1,4 +1,4 @@
-# Recommender System Project
+# Recommender System Project - Amazing Project
 
 Welcome on the AI316 Recommender System project page.
 
